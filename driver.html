@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Lab2 </title>
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+      />
+</head>
+          <style>
+              html {
+              font-family: Roboto;
+              text-align: center;
+              }
+              .settings-text{
+                  font-weight: bold;
+              }
+
+              .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+          </style>
+
+<body onload="main()">
+  <div class = "wrapper">
+    <div>
+    <h1> "He" the Polar Bear Cub :-) </h1>
+    <p> by Ivy La </p>
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+    </div>
+
+    <!-- Include external libs -->
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+    <div> 
+      <p> Rotation Angle </p> 
+      <div>
+      <input type="range" id="rotation" name="Rotation"
+             min="-360" max="360">
+      <label for="volume" value = "0"></label>
+      </div>
+    </div>
+
+    <!-- Include renderer -->
+    <script src="src/asg2.js"></script>
+
+  </div>
+</body>
+
+</html>
